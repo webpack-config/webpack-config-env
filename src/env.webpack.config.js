@@ -34,5 +34,5 @@ const extract = flow(
   fromPairs,
 );
 
-export default (env = {}) => console.log(chalk.bold('📦  Enironment')) ||
+export default (env = {}) => console.log(chalk.bold('📦  Environment')) ||
   plugin(new webpack.DefinePlugin(extract(env)));
